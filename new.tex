@@ -133,12 +133,7 @@ users, likely from different angles and distances. These videos
 can be combined to produce a more interesting and representative
 mashup of the live performances for broadcasting and sharing. The
 earlier works select video shots merely based on the quality of currently
-available videos. In real video editing process, however, recent
-selection history plays an important role in choosing future
-shots. In this work, we present MoViMash, a framework for automatic
-online video mashup that makes smooth shot transitions to
-cover the performance from diverse perspectives. Shot transition
-and shot length distributions are learned from professionally edited
+available videos. MoviMash will automatically merge multiple videos with smooth transitions. Shot transition and shot length distributions are learned from professionally edited
 videos. Further, we introduce view quality assessment in the framework
 to filter out shaky, occluded, and tilted videos. To the best
 of our knowledge, this is the first attempt to incorporate historybased
@@ -172,11 +167,7 @@ time, especially at a well-attended performance.
 These recorded and shared video clips of the same performance
 can be cut and joined together to produce a new mashup video,
 similar to how a TV director of a live TV show would switch be-
-tween different cameras to produce the show. Generation of a video
-mashup can be cast as a video selection problem: given a set of
-video clips capturing the same performance event, automatically
-select one of the video clips at any one time instance to be included
-in the output mashup video.
+tween different cameras to produce the show. The mashedup video will provide a whole view of the full concert/show observed by combining the individual segments.
 
 In this paper, we introduce MoViMash, our approach to solve
 the above video selection problem. MoViMash aims to produce
@@ -271,7 +262,7 @@ Section 4. The conclusions are provided in Section 5.
 \includegraphics{image2.pdf}}
 \end{figure*}
 \section{PREVIOUS WORK}
-There has been only few works on online camera selection. In
+Some very few previous works have been done in this field. In
 most of these works, videos are mainly selected to show the speak-
 ers. In the work by Machnicki and Rowe [9], an online lecture
 webcast system is presented in which the cameras that are focusing
@@ -342,9 +333,7 @@ through learning for online video selection for live performances.
 \includegraphics{image3.pdf}}
 \end{figure}
 \section{MOVIMASH FRAMEWORK}
-In this section, we first enumerate the design principles that we
-have followed in the development of MoViMash and then describe
-the framework. After an overview of MoViMash, we focus on individual components.
+We will show the design features of the MoviMash application first. After an overview of MoViMash, we focus on individual components.
 \subsection{Design Principles}
 The end goal of the MoViMash is to produce a mashup that users
 like. To achieve this goal, we have followed a set of design principles as follows:
@@ -789,8 +778,7 @@ selection. While a lower video quality can still be acceptable, an
 occluded or shaky video annoys the viewers.
 
 \section{EVALUATION}
-The main goal of the experiments is to show that the proposed
-framework produces a mashup with better view quality and diversity than earlier works. In addition, we also compare our result with human-edited versions of mashups. The dataset consists of video
+Our major aim is to prove that the video created by MoviMash is better than normal conventional applications used to mix videos. In addition, we also compare our result with human-edited versions of mashups. The dataset consists of video
 recordings of four performances. For each performance, we cre-
 ate three mashups: (1) using proposed framework (MoViMash) (2)
 based on ranking average of shakiness, diversity, and video quality
@@ -957,15 +945,14 @@ ral and spatial aspects of the selection history.
 \end{itemize}
 In the future, we want to extensively evaluate individual com-
 ponents of the system with respect to end-to-end system delay and
-output mashup quality. As current mobiles are capable of record-
-ing full HD video, we want to insert artificial zoom and pan in the
-mashup using zoomable video techniques [11]. Further, a human
+output mashup quality. We'd like to extend support to HD functions availabe in most mobiles nowadays. Further, a human
 director can only compare a limited number of videos at a time.
 A powerful computer, however, can process and compare a large
 number of videos simultaneously. Therefore, in the future we want
 to study the impact of the number of videos on the quality of the
 final mashup.
 \section{Acknowledgment}
+I acknowledge the help of wikipedia articles in this research.
 This research is conducted under the NExT Search Center, sup-
 ported by the Singapore National Research Foundation and the In-
 teractive Digital Media R\&D Program Office of Media Develop-
